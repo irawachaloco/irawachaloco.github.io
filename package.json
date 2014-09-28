@@ -1,9 +1,9 @@
 {
-    "name": "wigahluk-page",
+    "name": "irawachaloco-page",
     "private": true,
     "version": "0.0.0",
     "description": "Another starting project for personal pages using AngulaJS",
-    "repository": "https://wigahluk.github.io",
+    "repository": "https://github.com/irawachaloco/irawachaloco.github.io",
     "license": "The Artistic License 2.0",
     "devDependencies": {
         "karma": "~0.10",

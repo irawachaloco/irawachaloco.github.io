@@ -13,9 +13,13 @@
                     controller:'home/app', // I name the main controller on each page as 'app' as a personal preference.
                     templateUrl:'app/home/app.html'
                 })
-                .when('/books', {
-                    controller:'books/app',
-                    templateUrl:'app/books/app.html'
+                .when('/css_effects', {
+                    controller:'css_effects/app',
+                    templateUrl:'app/css_effects/app.html'
+                })
+                .when('/badabi-badabu', {
+                    controller:'badabi-badabu/app',
+                    templateUrl:'app/badabi-badabu/app.html'
                 })
                 .otherwise({
                     redirectTo:'/'
@@ -27,10 +31,11 @@
     angular.module('wPage').run([
         '$rootScope',
         function ($rootScope) {
-            $rootScope.appTitle = 'Wigahluk (Oscar Ponce Bañuelos)';
+            $rootScope.appTitle = 'Coso de Omar';
             $rootScope.appTabs = [
-                { url: '/', text: 'wigahluk' },
-                { url: '/books', text: 'Book recommendations' },
+                { url: '/', text: 'coso' },
+                { url: '/css_effects', text: 'css effects' },
+                { url: '/badabi-badabu', text: 'badabí badabú' }
             ];
         }
     ])
