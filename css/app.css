@@ -1,1 +1,26 @@
 .nav, .pagination, .carousel, .panel-title a, a.anchor { cursor: pointer; }
+li.listStyleNone {
+    list-style: none;
+}
+
+
+/* MY STYLES */
+*, *:after, *:before {
+    margin: 0;
+    box-sizing: border-box;
+}
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div .gradient-bkgd {
+    margin: 0;
+    padding: 0;
+}
+.gradient-bkgd {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
