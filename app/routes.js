@@ -21,6 +21,10 @@
                     controller:'badabi-badabu/app',
                     templateUrl:'app/badabi-badabu/app.html'
                 })
+                .when('/chunches', {
+                    controller:'chunches/app',
+                    templateUrl:'app/chunches/app.html'
+                })
                 .otherwise({
                     redirectTo:'/'
                 });
@@ -35,7 +39,8 @@
             $rootScope.appTabs = [
                 { url: '/', text: 'coso' },
                 { url: '/css_effects', text: 'css effects' },
-                { url: '/badabi-badabu', text: 'badabí badabú' }
+                { url: '/badabi-badabu', text: 'badabí badabú' },
+                { url: '/chunches', text: 'Galería de Chunches' }
             ];
         }
     ])

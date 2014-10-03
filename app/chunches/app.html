@@ -1,0 +1,38 @@
+<div class="page-header">
+    <div class="col-md-12">
+        <h1>chunches</h1>
+
+    </div>
+</div>
+<div>hola coso de chunches</div>
+
+
+<div class="col-md-12">
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+
+        </div>
+    </div>
+    <ul>
+        <li class="placeHolder1 listStyleNone" ng-repeat="chunche in chunches">{{chunche}}
+            <div class="thumbnail" >
+                <div class="demoView"></div>
+                <!--<img data-src="holder.js/300x300" alt="...">-->
+                <div class="caption">
+                <h3>{{chunche}}</h3>
+                <!--<p>...</p>-->
+                <!--<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>-->
+                </div>
+            </div>
+            <div class="thumbnail" >
+                <div class="demoView" ng-repeat="img in images"></div>
+                <!--<img data-src="holder.js/300x300" alt="...">-->
+                <div class="caption">
+                    <h3>{{img}}</h3>
+                    <!--<p>...</p>-->
+                    <!--<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>-->
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
