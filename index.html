@@ -38,21 +38,23 @@
     <!-- HEADER -->
     <div class='header'>
         <div class='siteName'>
-            <svg id='title' >
-                <linearGradient id="text-colorBkgd"  fy="0" gradientTransform="rotate(60 .5 .5)">
+            <a href="/#/">
+                <svg id='title' >
+                    <linearGradient id="text-colorBkgd"  fy="0" gradientTransform="rotate(60 .5 .5)">
 
-                    <stop offset="-20%" stop-color="#f15361">
-                    </stop>
-                    <stop offset="50%" stop-color="hsl(177, 77%, 68%)">
-                        <animate attributeName="offset" dur="66000ms" values="0;1;0"
-                                 repeatCount="indefinite" />
-                    </stop>
-                    <stop offset="100%" stop-color="hsl(320, 61%, 41%)"/>
+                        <stop offset="-20%" stop-color="#f15361">
+                        </stop>
+                        <stop offset="50%" stop-color="hsl(177, 77%, 68%)">
+                            <animate attributeName="offset" dur="66000ms" values="0;1;0"
+                                     repeatCount="indefinite" />
+                        </stop>
+                        <stop offset="100%" stop-color="hsl(320, 61%, 41%)"/>
 
-                </linearGradient>
-                <text x="0" y="46"  fill="url(#text-colorBkgd)">irawachaloco</text>
-                Sorry, your browser does not support inline SVG.
-            </svg>
+                    </linearGradient>
+                    <text x="0" y="46"  fill="url(#text-colorBkgd)">irawachaloco</text>
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+            </a>
         </div>
         <!-- <p>página personal de </p> -->
         <p class='name'>Omar Ponce</p>
@@ -64,6 +66,30 @@
         </div>
     </div>
     <!-- END HEADER -->
+
+    <div class="superMenu">
+
+        <index-menu-box box-title="web">
+            <ul>
+                <li>ux</li>
+                <li>web design</li>
+
+            </ul>
+        </index-menu-box>
+        <index-menu-box box-title="design">
+            <ul>
+                <li>graphic</li>
+                <li>object</li>
+
+            </ul>
+        </index-menu-box>
+        <index-menu-box box-title="paint" go-to="pintura"></index-menu-box>
+        <index-menu-box box-title="object"></index-menu-box>
+        <index-menu-box box-title="photo"></index-menu-box>
+        <index-menu-box box-title="draw"></index-menu-box>
+        <div class="clear"></div>
+
+    </div>
 
     <!-- CONTENT -->
     <div class='contain'>
@@ -78,6 +104,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="src/bower_components/angular/angular.js"></script>
     <script src="src/bower_components/angular-route/angular-route.js"></script>
+    <script src="src/bower_components/angular-animate/angular-animate.min.js"></script>
     <script src="src/bower_components/lodash/dist/lodash.min.js"></script>
     <script src="src/irawachaloco.js"></script>
     <script src="src/directives/index_menu_box.js"></script>

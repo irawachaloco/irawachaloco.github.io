@@ -5,7 +5,8 @@
   text-rendering: optimizeLegibility !important;
 
 -webkit-font-smoothing: antialiased !important;
-} 
+}
+.clear { clear: both; }
 .wrapper {
 	height: 100vh;
   min-height: 100vh;
@@ -240,8 +241,8 @@ a:nth-child(6) .placeholder {
     background-color: #FFFFFF;
 }
 .index-menu-box .box-content {
-    -webkit-transition:all linear 5s;
-    transition:all linear 5s;
+    -webkit-transition:all linear 0.5s;
+    transition:all linear 0.5s;
 }
 .index-menu-box .box-content.ng-hide {
     opacity:0;
