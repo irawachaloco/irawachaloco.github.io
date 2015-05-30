@@ -13,6 +13,10 @@
                     controller:'index', // I name the main controller on each page as 'app' as a personal preference.
                     templateUrl:'src/views/index.html'
                 })
+                .when('/pintura', {
+                    controller:'pintura', // I name the main controller on each page as 'app' as a personal preference.
+                    templateUrl:'src/views/pintura.html'
+                })
                 .otherwise({
                     redirectTo:'/'
                 });
