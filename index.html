@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html ng-app="wPage">
 <head lang="en">
+    <title>irawachaloco</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ appTitle }}</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -14,28 +13,72 @@
     <![endif]-->
 </head>
 <body>
-    <navbar navtabs="appTabs"></navbar>
-    <div class="container-fluid">
+<!-- ============= BACKGROUND ============= -->
+<div class='bkgd'>
+    <svg class='main-bkgd2' width="100%" height="100%">
+        <defs>
+            <linearGradient id="mainBkgdGrad" x1="0%" y1="0%" x2="100%" y2="0%" fy="0" gradientTransform="rotate(-60 .5 .5)" >
+                <stop offset="0%" style="stop-color:blue; stop-opacity:.35">
+                </stop>
+                <stop offset="0%" style="stop-color:red; stop-opacity:.2">
+                </stop>
+                <stop offset="100%" style="stop-color:moccasin; stop-opacity:.3">
+                </stop>
+            </linearGradient>
+        </defs>
+        <rect width="150%" height="150%" y='-25%' x='-25%' />
+            Sorry, your browser does not support inline SVG.
+    </svg>
+</div>
+<!-- ============= END BACKGROUND ============= -->
+
+<!-- WRAPPER -->
+<div class='wrapper'>
+
+    <!-- HEADER -->
+    <div class='header'>
+        <div class='siteName'>
+            <svg id='title' >
+                <linearGradient id="text-colorBkgd"  fy="0" gradientTransform="rotate(60 .5 .5)">
+
+                    <stop offset="-20%" stop-color="#f15361">
+                    </stop>
+                    <stop offset="50%" stop-color="hsl(177, 77%, 68%)">
+                        <animate attributeName="offset" dur="66000ms" values="0;1;0"
+                                 repeatCount="indefinite" />
+                    </stop>
+                    <stop offset="100%" stop-color="hsl(320, 61%, 41%)"/>
+
+                </linearGradient>
+                <text x="0" y="46"  fill="url(#text-colorBkgd)">irawachaloco</text>
+                Sorry, your browser does not support inline SVG.
+            </svg>
+        </div>
+        <!-- <p>página personal de </p> -->
+        <p class='name'>Omar Ponce</p>
+        <div class='right-labels'>
+            <div class='contact'>
+                <a href="" target="_top">info</a>
+                <!-- <a href="mailto:irawachaloco@gmail.com" target="_top">contacto</a> -->
+            </div>
+        </div>
+    </div>
+    <!-- END HEADER -->
+
+    <!-- CONTENT -->
+    <div class='contain'>
         <div ng-view></div>  <!-- This is the main container where Angular will put all the stuff -->
     </div>
-    <div class="footer"></div>
+    <!-- END CONTENT -->
 
-<!-- I'm just adding some basic HTML to the index page, but the intention is to have
- this thing running with Angular and using it as a tool to help other to learn AngularJS.
- Just added some more files, not content. AngularJS and a couple of dependencies. Lets keep this simple.
- Controllers and routes added. I think this will work as a pretty basic setup.
- Added Bootstrap and its dependencies. I'm not installing them with bower as I don't have any intention to repackage for deployments.
- New directive to handle tabs.
- -->
+</div>
+<!-- END WRAPPER -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="app/bower_components/angular/angular.js"></script>
-    <script src="app/bower_components/angular-route/angular-route.js"></script>
-    <script src="app/bower_components/lodash/dist/lodash.min.js"></script>
-    <script src="app/routes.js"></script>
-    <script src="app/directives/navbar.js"></script>
-    <script src="app/home/app.js"></script>
-    <script src="app/css_effects/app.js"></script>
-    <script src="app/badabi-badabu/app.js"></script>
+    <script src="src/bower_components/angular/angular.js"></script>
+    <script src="src/bower_components/angular-route/angular-route.js"></script>
+    <script src="src/bower_components/lodash/dist/lodash.min.js"></script>
+    <script src="src/irawachaloco.js"></script>
+    <script src="src/controllers/index.js"></script>
 </body>
 </html>

@@ -1,0 +1,778 @@
+*  {
+	margin:0; 
+	padding:0;
+	font-family: helvetica, sans-serif;
+  text-rendering: optimizeLegibility !important;
+
+-webkit-font-smoothing: antialiased !important;
+} 
+.wrapper {
+	height: 100vh;
+  min-height: 100vh;
+  padding: 0 10vh;
+}
+
+.header {
+  display: block;
+	background: transparent;
+	color: dimgrey;
+	padding: .5rem 0 .6rem;
+  position: relative;
+	box-sizing: border-box;
+}
+
+.header p {
+	font-size: .6rem;
+	display: inline-block;
+	text-transform: uppercase;
+}
+.content{margin:auto;padding: 0 .33vw;}
+.slick-slider{ margin: 2vh auto 7vh;}
+
+h1 {
+	font-size: 1.2rem;
+	font-weight: 200;
+	display: inline-block;
+}
+h2 {
+  color: rgba(255,255,255,.8);
+  font-size: .9rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2pt;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+.siteName {
+	display: inline-block;
+	height: 1.8rem;
+	font-size: 3.8rem;
+  font-family: Sans-serif;
+  font-weight: bold;
+  overflow: hidden;
+  position: relative;
+  opacity: .2;
+}
+.right-labels {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+.right-labels div {
+  font-size: .8rem;
+}
+/* ---- SVG ---- */
+.siteName {
+    
+    
+}
+.siteName,
+.siteName svg {
+	/*height: 2.8rem;*/
+}
+.siteName svg {
+	width: 24.2rem;
+	height: 4rem;
+    /*position: absolute;*/
+}
+/* ---- MENU ---- */
+.menu {
+  opacity: .7;
+}
+.menu:hover {
+  opacity: 1;
+}
+
+/* ---- CONTAIN ---- */
+.contain {
+  position: relative;
+	/*min-height: calc(100vh - 4.6rem);*/
+ /* background: transparent;*/
+	/*background: rgb(12,12,12);*/
+	/*background: black;*/
+}
+.placeholder_container {
+  width: 100%;
+  display: inline-block;
+  /*padding: 0 1.5rem;*/
+  margin: 0;
+  box-sizing: border-box;
+  /*position: absolute;*/
+  position: relative;
+	/*padding: 0 0rem 0 3rem;*/
+}
+
+/*.placeholder_container {
+	padding: .5rem;
+	display: inline-block;
+}*/
+a .placeholder {
+
+}
+.placeholder {
+	width:  calc(33.33% - .666vw);
+	height:calc(50vh - 10.5vh);
+  margin: 0 1vw 2vh 0;
+  float: left;
+  position: relative;
+  overflow: hidden;
+	/*padding: 0 0 0 0;*/
+  
+/*	background: rgba(255,255,255,0.1);*/
+	/*display: inline-block;*/
+	box-sizing:border-box;
+}
+a:nth-child(3) .placeholder,
+a:nth-child(6) .placeholder {
+  margin-right: 0;
+}
+.placeholder:after {
+  position: absolute;
+  content: '';
+  width:  100%;
+  height: calc(50vh - 10.5vh);
+  opacity:.19;
+}
+.placeholder.turn_black div {
+  line-height: 1.5em;
+}
+.placeholder.turn_black div::after {
+  content:'';
+  position: absolute;
+  width: .6em;
+  height: .6em;
+  top:1.2rem;
+  right: 1rem;
+  background: url(../../gorduxPage_temp/assets/btns/close_whte_icon.svg) center no-repeat;
+  background-size: .4em;
+  border: 2px solid rgba(255,255,255,.8);
+  border-radius: 2em;
+}
+
+.turn_black:after {
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+.turn_black::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 2;
+  opacity: .8;
+}
+.placeholder:hover::after {
+  opacity: 1;
+}
+.placeholder.contracted:after {
+  opacity: .3;
+}
+
+.placeholder div {
+  text-align: center;
+  line-height: calc(50vh - 10.5vh);
+  color: rgba(40,40,40,.2);
+  font-size: 3rem;
+  /*font-weight: 600;*/
+  position: absolute;
+  width: 100%;
+  mix-blend-mode: luminosity;
+  z-index: 1;
+}
+
+
+.placeholder:hover {
+  box-shadow: 2pt 5pt 10pt 2pt rgba(0,0,0,.2);
+}
+
+
+.placeholder.contracted:after {
+  position: absolute;
+  content: '';
+  width: 2rem;
+  height: 2rem;
+  transform: translate(0,-2rem);
+  -webkit-transform: translate(0,-2rem);
+  z-index: 0;
+  /*background: tomato;
+  opacity: .3;*/
+}
+.placeholder.contracted {
+  width:  auto;
+  height: 2rem;
+  margin: 1vh .7rem;
+  padding: 0 0 0 0;
+  display: inline-block;
+  box-sizing:border-box;
+}
+
+
+.placeholder:hover div,
+.placeholder.contracted:hover div {
+  color: white;
+}
+
+.placeholder.contracted div {
+  line-height: 2rem;
+  color: rgba(255,255,255,.7);
+  font-size: 1rem;
+  font-weight: 100;
+  background: rgba(255,255,255,.2);
+  margin-left: 2.5rem;
+  padding: 0 .5rem;
+  position: relative;
+  width: auto;
+}
+.cat-list {
+ /* display: none;*/
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 2;
+  -webkit-transform: translate(0,100%);
+          transform: translate(0,100%);
+}
+.cat-list.show {
+  /*display: block;*/
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+.cat-list li {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  list-style: none;
+  text-align: center;
+  color: white;
+  width: 100%;
+  margin-top
+  : 0.1rem;
+  background: rgba(255,255,255,.5);
+}
+.cat-list li:hover {
+  box-shadow: inset 0px 2px 0 0px rgba(255,255,255,.7);
+}
+
+/*.placeholder {
+	position: relative;
+	width: calc(33vw - 4vw);
+	height: calc(50vh - 4.4rem);
+	margin: 0 0 3vh 3.3vw;
+	float: left;
+	background: rgba(255,255,255,0.1);
+	box-sizing: border-box;
+}*/
+
+
+
+
+
+.trans,
+.trans:after,
+.trans > * {
+  -webkit-transition: all 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
+     -moz-transition: all 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
+       -o-transition: all 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
+          transition: all 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */           
+}
+.anim,
+.anim::after,
+.placeholder:hover:after {
+  -webkit-animation-duration:  300ms !important; 
+    -moz-animation-duration:   300ms !important; 
+    -o-animation-duration:     300ms !important; 
+    
+    -webkit-animation-delay: 400ms !important; 
+    -moz-animation-delay:    400ms !important; 
+    -o-animation-delay:      400ms !important;
+
+    -webkit-animation-iteration-count:  infinite !important; 
+    -moz-animation-iteration-count:     infinite !important; 
+    -o-animation-iteration-count:       infinite !important; 
+}
+
+/* ---- WEB ---- */
+.placeholder.showweb:after {
+  background: rgba(253,252,237,1);
+}
+.placeholder.showweb:hover:after {
+  -webkit-animation-name: showweb; 
+     -moz-animation-name: showweb; 
+       -o-animation-name: showweb;
+          animation-name: showweb;
+}
+/* ---- DESIGN ---- */
+.placeholder.showdesign:after {
+  background: rgba(222,191,94,1);
+}
+.placeholder.showdesign:hover:after {
+  -webkit-animation-name: showdesign; 
+     -moz-animation-name: showdesign; 
+       -o-animation-name: showdesign;
+          animation-name: showdesign;
+}
+/* ---- PAINTS ---- */
+.placeholder.showpictures:after{
+  background: rgba(156,95,86,1);
+}
+.placeholder.showpictures:hover:after {
+  -webkit-animation-name: showpictures; 
+     -moz-animation-name: showpictures; 
+       -o-animation-name: showpictures;
+          animation-name: showpictures;
+}
+/* ---- OBJECT ---- */
+.placeholder.showobject:after {
+  background: rgba(55,114,126,1);
+}
+.placeholder.showobject:hover:after {
+  -webkit-animation-name: showobject; 
+     -moz-animation-name: showobject; 
+       -o-animation-name: showobject;
+          animation-name: showobject;
+}
+/* ---- PHOTOS ---- */
+.placeholder.showphotos:after {
+  background:rgba(255,190,237,1);
+
+}
+.placeholder.showphotos:hover:after {
+  -webkit-animation-name: showphotos; 
+     -moz-animation-name: showphotos; 
+       -o-animation-name: showphotos;
+          animation-name: showphotos;
+}
+/* ---- DRAWINGS ---- */
+.placeholder.showdrawings:after {
+  background: rgba(185,49,61,1);
+}
+.placeholder.showdrawings:hover:after {
+  -webkit-animation-name: showdrawings;
+     -moz-animation-name: showdrawings; 
+       -o-animation-name: showdrawings;
+          animation-name: showdrawings;
+}
+
+/*  IMAGES ANIMATION FOR PLACE HOLDER (minislider/speedslider)  */
+
+
+
+
+@-webkit-keyframes showweb {
+  0%, 100% {
+    background: rgba(253,252,237,.8) center;
+    background-size: cover;
+  }
+  5% {
+    background: url(../assets/imgs/web/knob-colors1.png) center no-repeat;
+    background-size: cover;
+    opacity: 1;
+  }
+  30% {
+    background: rgba(253,252,237,.8) center;
+    background-size: cover;
+  }
+  35% {
+    background: url(../assets/imgs/web/code.png) center no-repeat;
+    background-size: cover;
+    opacity: 1;
+  }
+  70% {
+    background: rgba(253,252,237,.8) center;
+    background-size: cover;
+  }
+  75% {
+    background: url(../assets/imgs/diseno/MFMPayArtwork@2x.png) center no-repeat;
+    background-size: cover;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes showdesign {
+  0%,100% {
+    background: rgba(222,191,94,.8) center;
+    background-size: cover;
+  }
+  5% {
+    background: url(../assets/imgs/diseno/portada.jpg) center no-repeat;
+    background-size: cover;
+  }
+  30% {
+    background: rgba(222,191,94,.8) center;
+    background-size: cover;
+  }
+  35% {
+    background: url(../assets/imgs/diseno/etiquetasceramica-brasa.jpg) center no-repeat;
+    background-size: cover;
+  }
+  70% {
+    background: rgba(222,191,94,.8) center;
+    background-size: cover;
+  }
+  75% {
+    background: url(../assets/imgs/diseno/ceramica/jarraytazas.jpg) center no-repeat;
+    background-size: cover;
+  }
+}
+
+@-webkit-keyframes showpictures {
+  0%, 100% {
+    background: rgba(156,95,86,.8) center;
+    background-size: cover;
+  }
+  5% {
+    background: url(../assets/imgs/pintura/esenano.jpg) center no-repeat;
+    background-size: cover;
+  }
+  30% {
+    background: rgba(156,95,86,.8) center;
+    background-size: cover;
+  }
+  35% {
+    background: url(../assets/imgs/pintura/juguetespat_sumum.jpg) center no-repeat;
+    background-size: cover;
+  }
+  40% {
+    background: url(../assets/imgs/pintura/juguetespat_sumum.jpg) center no-repeat;
+    background-size: cover;
+  }
+  70% {
+    background: rgba(156,95,86,.8) center;
+    background-size: cover;
+  }
+  75% {
+    background: url(../assets/imgs/pintura/blancos/sillaIV.jpg) center no-repeat;
+    background-size: cover;
+  }
+}
+
+@-webkit-keyframes showobject{
+  0%, 100% {
+    background: rgba(55,114,126,.8) center;
+    background-size: cover;
+  }
+  5% {
+    background: url(../assets/imgs/brasas-hilos.jpg) center no-repeat;
+    background-size: cover;
+    opacity: 1;
+  }
+  30% {
+   background: rgba(55,114,126,.8) center;
+   background-size: cover;
+  }
+  35% {
+    background: url(../assets/imgs/tenengo-conunarbol01.jpg) center no-repeat;
+    background-size: cover;
+    opacity: 1;
+  }
+  70% {
+    background: rgba(55,114,126,.8); center
+  }
+  75% {
+    background: url(../assets/imgs/vaso.jpg) center no-repeat;
+    background-size: cover;
+    opacity: 1;
+  }
+
+}
+@-webkit-keyframes showphotos {
+  0%, 100% {
+    background: rgba(255,190,237,.8) center;
+    background-size: cover;
+  }
+  5% {
+    background: url(../assets/imgs/munecos/desnudez.jpg) center no-repeat;
+    background-size: cover;
+  }
+  30% {
+    background: rgba(255,190,237,.8) center;
+    background-size: cover;
+  }
+  35% {
+    background: url(../assets/imgs/munecos/bailando.jpg) center no-repeat;
+    background-size: cover;
+    opacity: 1;
+  }
+  70% {
+    background: rgba(255,190,237,.8) center;
+    background-size: cover;
+  }
+  75% {
+    background: url(../assets/imgs/munecos/bebezumbi.jpg) center no-repeat;
+    background-size: cover;
+  }
+}
+@-webkit-keyframes showdrawings {
+  0%, 100% {
+    background: rgba(185,49,61,.8) center;
+    background-size: cover;
+  }
+  5% {
+    background: url(../assets/imgs/dibujo/dibujo-1.jpg) center no-repeat;
+    background-size: cover;
+  }
+  30% {
+    background: rgba(185,49,61,.8) center;
+    background-size: cover;
+  }
+  35% {
+    background: url(../assets/imgs/dibujo/dibujo-2.jpg) center no-repeat;
+    background-size: cover;
+  }
+  70% {
+    background: rgba(185,49,61,.8) center;
+    background-size: cover;
+  }
+  75% {
+    background: url(../assets/imgs/dibujo/furias1.jpg) center no-repeat;
+    background-size: cover;
+
+  }
+
+}
+
+
+
+
+
+
+
+/* == COLORS == */
+
+/*rgba(55,114,126,1);
+background: rgba(185,49,61,1);
+background: rgba(244,192,237,1);
+background: rgba(222,191,94,1);
+background: rgba(156,95,86,1);
+ background: rgba(185,115,177,1);
+  background: rgba(127,255,212,.9);
+
+background: rgba(222,191,94,1);*/
+
+section.menu .placeholder_container {
+  width: auto;
+  margin: 2vh 0 0;
+  padding: 0;
+}
+section.menu .placeholder_container.contracted {
+  position: absolute;
+  bottom: -1.2vh;
+  right: -.333vw;
+}
+
+/* ---- SLIDER ---- */
+
+section.black {
+  height: 100%;
+  /*padding-left: 20vw;*/
+}
+section .content {
+ width: 100%; 
+}
+
+
+.slick-prev:before {
+  -webkit-transform: rotate(180deg) translate(2vw,0);
+  -moz-transform:    rotate(180deg) translate(2vw,0);
+  -ms-transform:     rotate(180deg) translate(2vw,0);
+  -o-transform:      rotate(180deg) translate(2vw,0);
+  transform:         rotate(180deg) translate(2vw,0);
+}
+[dir="rtl"] .slick-prev:before {
+  -webkit-transform: rotate(180deg) translate(2vw,0);
+  -moz-transform:    rotate(180deg) translate(2vw,0);
+  -ms-transform:     rotate(180deg) translate(2vw,0);
+  -o-transform:      rotate(180deg) translate(2vw,0);
+  transform:         rotate(180deg) translate(2vw,0);
+}
+
+section.black h2 {/*text-align:center;*/}
+.main-bkgd2 {
+    fill:url(#mainBkgdGrad);
+    height:100%;
+    display:inline-block;
+    position:absolute;
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    z-index: 0;
+    /*background: rgb(20,20,20);*/
+}
+.main-bkgd2 > * {
+  z-index: 0;
+}
+.image {
+  height: 80vh; 
+}
+
+
+
+
+/* ==== PHOTO ==== */
+.photo .slick-slide:nth-child(1) {
+  background: url(../assets/imgs/munecos/pareja.jpg) no-repeat;
+  background-size: contain;
+}
+.photo .slick-slide:nth-child(2) {
+  background: url(../assets/imgs/munecos/heladia/heladia01.jpg) no-repeat;
+  background-size: contain;
+}
+.photo .slick-slide:nth-child(3) {
+  background: url(../assets/imgs/munecos/heladia/heladia02.jpg) no-repeat;
+  background-size: contain;
+}
+.photo .slick-slide:nth-child(4) {
+  background: url(../assets/imgs/munecos/heladia/heladia03.jpg) no-repeat;
+  background-size: contain;
+}
+.photo .slick-slide:nth-child(5) {
+  background: url(../assets/imgs/munecos/muneca_rota/skalter-01.jpg) no-repeat;
+  background-size: contain;
+}
+.photo .slick-slide:nth-child(6) {
+  background: url(../assets/imgs/munecos/muneca_rota/skalter-02.jpg) no-repeat;
+  background-size: contain;
+}
+.photo .slick-slide:nth-child(7) {
+  background: url(../assets/imgs/munecos/muneca_rota/skalter-03.jpg) no-repeat;
+  background-size: contain;
+}
+.photo .slick-slide:nth-child(8) {
+  background: url(../assets/imgs/munecos/muneca_rota/skalter-04.jpg) no-repeat;
+  background-size: contain;
+}
+.photo .slick-slide:nth-child(9) {
+  background: url(../assets/imgs/munecos/muneca_rota/skalter-05.jpg) no-repeat;
+  background-size: contain;
+}
+.photo .slick-slide:nth-child(10) {
+  background: url(../assets/imgs/munecos/bailando.jpg) no-repeat;
+  background-size: contain;
+}
+.photo .slick-slide:nth-child(11) {
+  background: url(../assets/imgs/munecos/barbie02.jpg) no-repeat;
+  background-size: contain;
+}
+.photo .slick-slide:nth-child(12) {
+  background: url(../assets/imgs/munecos/ken/kenorig.jpg) no-repeat;
+  background-size: contain;
+}
+.photo .slick-slide:nth-child(13) {
+  background: url(../assets/imgs/munecos/muneca_rota/skalter-05.jpg) no-repeat;
+  background-size: contain;
+}
+.photo .slick-slide:nth-child(14) {
+  background: url(../assets/imgs/munecos/muneca_rota/tenengo-conunarbol01.jpg) no-repeat center;
+  background-size: contain;
+}
+.photo .slick-slide:nth-child(15) {
+  background: url(../assets/imgs/munecos/muneca_rota/tenengo-conunarbol01.jpg) no-repeat center;
+  background-size: contain;
+}
+.photo .slick-slide:nth-child(16) {
+  background: url(../assets/imgs/munecos/muneca_rota/tenengo-conunarbol01.jpg) no-repeat center;
+  background-size: contain;
+}
+
+/* ==== PAINT ==== */
+
+.paint .slick-slide:nth-child(1) {
+  background: url(../assets/imgs/pintura/blancos/cajas2.jpg) no-repeat center;
+  background-size: contain;
+}
+.paint .slick-slide:nth-child(2) {
+  background: url(../assets/imgs/pintura/blancos/blancos.jpg) no-repeat center;
+  background-size: contain;
+}
+.paint .slick-slide:nth-child(3) {
+  background: url(../assets/imgs/pintura/blancos/cajaIII.jpg) no-repeat center;
+  background-size: contain;
+}
+.paint .slick-slide:nth-child(4) {
+  background: url(../assets/imgs/pintura/blancos/cajas1.jpg) no-repeat center;
+  background-size: contain;
+}
+.paint .slick-slide:nth-child(5) {
+  background: url(../assets/imgs/pintura/blancos/cajas2.jpg) no-repeat center;
+  background-size: contain;
+}
+.paint .slick-slide:nth-child(6) {
+  background: url(../assets/imgs/pintura/blancos/cajasI-1.jpg) no-repeat center;
+  background-size: contain;
+}
+.paint .slick-slide:nth-child(7) {
+  background: url(../assets/imgs/pintura/blancos/escalera.jpg) no-repeat center;
+  background-size: contain;
+}
+
+/* ==== DRAWING ==== */
+
+.drawing .slick-slide:nth-child(1) {
+  background: url(../assets/imgs/pintura/blancos/cajas2.jpg) no-repeat center;
+  background-size: contain;
+}
+.drawing .slick-slide:nth-child(2) {
+  background: url(../assets/imgs/pintura/blancos/blancos.jpg) no-repeat center;
+  background-size: contain;
+}
+.drawing .slick-slide:nth-child(3) {
+  background: url(../assets/imgs/pintura/blancos/cajaIII.jpg) no-repeat center;
+  background-size: contain;
+}
+.drawing .slick-slide:nth-child(4) {
+  background: url(../assets/imgs/pintura/blancos/cajas1.jpg) no-repeat center;
+  background-size: contain;
+}
+.drawing .slick-slide:nth-child(5) {
+  background: url(../assets/imgs/pintura/blancos/cajas2.jpg) no-repeat center;
+  background-size: contain;
+}
+.drawing .slick-slide:nth-child(6) {
+  background: url(../assets/imgs/pintura/blancos/cajasI-1.jpg) no-repeat center;
+  background-size: contain;
+}
+.drawing .slick-slide:nth-child(7) {
+  background: url(../assets/imgs/pintura/blancos/escalera.jpg) no-repeat center;
+  background-size: contain;
+}
+
+/* ==== DESIGN ==== */
+
+.drawing .slick-slide:nth-child(1) {
+  background: url(../assets/imgs/pintura/blancos/cajas2.jpg) no-repeat center;
+  background-size: contain;
+}
+.drawing .slick-slide:nth-child(2) {
+  background: url(../assets/imgs/pintura/blancos/blancos.jpg) no-repeat center;
+  background-size: contain;
+}
+.drawing .slick-slide:nth-child(3) {
+  background: url(../assets/imgs/pintura/blancos/cajaIII.jpg) no-repeat center;
+  background-size: contain;
+}
+.drawing .slick-slide:nth-child(4) {
+  background: url(../assets/imgs/pintura/blancos/cajas1.jpg) no-repeat center;
+  background-size: contain;
+}
+.drawing .slick-slide:nth-child(5) {
+  background: url(../assets/imgs/pintura/blancos/cajas2.jpg) no-repeat center;
+  background-size: contain;
+}
+.drawing .slick-slide:nth-child(6) {
+  background: url(../assets/imgs/pintura/blancos/cajasI-1.jpg) no-repeat center;
+  background-size: contain;
+}
+.drawing .slick-slide:nth-child(7) {
+  background: url(../assets/imgs/pintura/blancos/escalera.jpg) no-repeat center;
+  background-size: contain;
+}
+
+
+
+
+
+.slick-dots { display: none !important;}
