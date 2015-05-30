@@ -228,6 +228,23 @@ a:nth-child(6) .placeholder {
   position: relative;
   width: auto;
 }
+/* Oscar empieza sus cochinadas */
+.index-menu-box {
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.index-menu-box .box-content {
+    background-color: #FFFFFF;
+}
+.index-menu-box .box-content {
+    -webkit-transition:all linear 5s;
+    transition:all linear 5s;
+}
+.index-menu-box .box-content.ng-hide {
+    opacity:0;
+}
+/* Oscar termina sus cochinadas */
 .cat-list {
  /* display: none;*/
   position: absolute;
@@ -297,14 +314,14 @@ a:nth-child(6) .placeholder {
 
 /* ---- WEB ---- */
 .placeholder.showweb:after {
-  background: rgba(253,252,237,1);
+  /*background: rgba(253,252,237,1);*/
 }
-.placeholder.showweb:hover:after {
-  -webkit-animation-name: showweb; 
-     -moz-animation-name: showweb; 
-       -o-animation-name: showweb;
-          animation-name: showweb;
-}
+/*.placeholder.showweb:hover:after {*/
+  /*-webkit-animation-name: showweb;*/
+     /*-moz-animation-name: showweb;*/
+       /*-o-animation-name: showweb;*/
+          /*animation-name: showweb;*/
+/*}*/
 /* ---- DESIGN ---- */
 .placeholder.showdesign:after {
   background: rgba(222,191,94,1);

@@ -1,23 +1,32 @@
 <div class='placeholder_container section'>
 
-    <div class='placeholder withChild trans showweb'>
+    <index-menu-box box-title="web">
+        <ul>
+            <li>ux</li>
+            <li>web design</li>
+
+        </ul>
+    </index-menu-box>
+    <index-menu-box box-title="design">
+    </index-menu-box>
+    <!--div class='placeholder withChild trans showweb'>
         <div class=''>web</div>
         <ul class='cat-list'>
             <li>ux</li>
             <li>web design</li>
 
         </ul>
-    </div>
+    </div-->
 
 
-    <div class='placeholder withChild trans showdesign'>
+    <!--div class='placeholder withChild trans showdesign'>
         <div class=''>design</div>
         <ul class='cat-list'>
             <li>graphic</li>
             <li>object</li>
 
         </ul>
-    </div>
+    </div-->
 
     <a href='/#/pintura'>
         <div class='placeholder simple trans showpictures'><div class=''>paint</div></div>
@@ -41,10 +50,6 @@
 <script>
 
     $(document).ready(function(){
-        $(".placeholder.withChild").click(function(){
-            $(this).toggleClass('turn_black');
-            $(this).find(".cat-list").toggleClass('show');
-        });
         $(".placeholder.simple").click(function(){
             $(this).parent().parent().toggleClass('placed');;
             $(this).find(".cat-list").toggleClass('show');
