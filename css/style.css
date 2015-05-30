@@ -681,7 +681,7 @@ section.black h2 {/*text-align:center;*/}
 /* ==== PAINT ==== */
 
 .paint .slick-slide:nth-child(1) {
-  background: url(../assets/imgs/pintura/blancos/cajas2.jpg) no-repeat center;
+  background: url(https://c4.staticflickr.com/4/3744/9530699391_d9479b8b9a_c.jpg) no-repeat center;
   background-size: contain;
 }
 .paint .slick-slide:nth-child(2) {
@@ -776,3 +776,15 @@ section.black h2 {/*text-align:center;*/}
 
 
 .slick-dots { display: none !important;}
+
+
+
+.placeholder.placed {
+    width:  calc(5vw);
+    height:calc(5vw);
+    margin: 0 1vw 2vh 0;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    box-sizing:border-box;
+}

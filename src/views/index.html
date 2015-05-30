@@ -1,6 +1,6 @@
 <div class='placeholder_container section'>
 
-    <div class='placeholder trans showweb'>
+    <div class='placeholder withChild trans showweb'>
         <div class=''>web</div>
         <ul class='cat-list'>
             <li>ux</li>
@@ -10,7 +10,7 @@
     </div>
 
 
-    <div class='placeholder trans showdesign'>
+    <div class='placeholder withChild trans showdesign'>
         <div class=''>design</div>
         <ul class='cat-list'>
             <li>graphic</li>
@@ -19,17 +19,18 @@
         </ul>
     </div>
 
-    <a href='/#/pintura'>
-        <div class='placeholder trans showpictures'><div class=''>paint</div></div>
+    <!--<a href='/#/pintura'>-->
+    <a href=''>
+        <div class='placeholder simple trans showpictures'><div class=''>paint</div></div>
     </a>
     <a href='/#/paper'>
-        <div class='placeholder trans showobject'><div class=''>object</div></div>
+        <div class='placeholder simple trans showobject'><div class=''>object</div></div>
     </a>
     <a href='/#/photo'>
-        <div class='placeholder trans showphotos'><div class=''>photo</div></div>
+        <div class='placeholder simple trans showphotos'><div class=''>photo</div></div>
     </a>
     <a href='/#/drawing'>
-        <div class='placeholder trans showdrawings'><div class=''>draw</div></div>
+        <div class='placeholder simple trans showdrawings'><div class=''>draw</div></div>
     </a>
 
 
@@ -37,3 +38,17 @@
     <!-- <div class='placeholder seven'></div>
     <div class='placeholder eight'></div> -->
 </div>
+
+<script>
+
+    $(document).ready(function(){
+        $(".placeholder.withChild").click(function(){
+            $(this).toggleClass('turn_black');
+            $(this).find(".cat-list").toggleClass('show');
+        });
+        $(".placeholder.simple").click(function(){
+            $(this).parent().parent().toggleClass('placed');;
+            $(this).find(".cat-list").toggleClass('show');
+        });
+    });
+</script>
