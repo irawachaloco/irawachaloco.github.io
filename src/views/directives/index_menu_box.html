@@ -1,4 +1,5 @@
-<div class='index-menu-box' ng-click="toggleChildren()">
-    <div class=''>{{boxTitle}}</div>
-    <div ng-transclude class="box-content" ng-class="extraClass" ng-show="showContent"></div>
+<div class='index-menu-box' ng-click="toggleChildren()" ng-class="extraClass">
+    <div class='menu-item-title'><h1>{{boxTitle}}</h1></div>
+    <!--<div ng-transclude class="box-content"  ng-show="showContent"></div>-->
+    <div ng-transclude class="box-content"></div>
 </div>

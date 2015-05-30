@@ -46,6 +46,9 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
+li {
+    list-style: none;
+}
 
 
 .siteName {
@@ -229,25 +232,59 @@ a:nth-child(6) .placeholder {
   position: relative;
   width: auto;
 }
-/* Oscar empieza sus cochinadas */
+
+
+/* ------  Oscar empieza sus cochinadas  ------ */
+
 .index-menu-box {
     width:20vw;
     height:20vw;
+    margin: 1vw;
     float: left;
     position: relative;
     overflow: hidden;
+    text-align: center;
+    background: rgba(255,255,255,.2);
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+
+    -webkit-transition:all linear 0.5s;
+    transition:all linear 0.5s;
 }
 .index-menu-box .box-content {
-    background-color: #FFFFFF;
+    /*position: absolute;*/
+    width: 100%;
+    background-color: red;
+    bottom: 0;
+    -webkit-transform: translate(0,100%);
+    transform: translate(0,100%);
+}
+.index-menu-box.show-subnav .box-content {
+    background-color: blue;
+    -webkit-transform: translate(0);
+    transform: translate(0);
 }
 .index-menu-box .box-content {
     -webkit-transition:all linear 0.5s;
     transition:all linear 0.5s;
 }
 .index-menu-box .box-content.ng-hide {
+    /*opacity no tiene efecto aquí, ng-hide desaparece al elemento persé*/
     opacity:0;
 }
+.box-content li {
+    color: white;
+}
+.menu-item-title {
+    position: absolute;
+    width: 100%;
+}
+
 /* Oscar termina sus cochinadas */
+
 .cat-list {
  /* display: none;*/
   position: absolute;
@@ -798,13 +835,3 @@ section.black h2 {/*text-align:center;*/}
 .slick-dots { display: none !important;}
 
 
-
-.placeholder.placed {
-    width:  calc(5vw);
-    height:calc(5vw);
-    margin: 0 1vw 2vh 0;
-    float: left;
-    position: relative;
-    overflow: hidden;
-    box-sizing:border-box;
-}
