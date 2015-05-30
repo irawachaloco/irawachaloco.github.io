@@ -230,6 +230,8 @@ a:nth-child(6) .placeholder {
 }
 /* Oscar empieza sus cochinadas */
 .index-menu-box {
+    width:20vw;
+    height:20vw;
     float: left;
     position: relative;
     overflow: hidden;
