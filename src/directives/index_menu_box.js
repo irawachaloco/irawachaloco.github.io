@@ -20,7 +20,6 @@
                         navigate();
                         if (!hasChildren) return;
 
-//                        desactivé el showContent borrando ng-show en el index_menu_box
                         scope.showContent = !scope.showContent;
                         scope.extraClass = scope.extraClass ? undefined : 'show-subnav';
                     };

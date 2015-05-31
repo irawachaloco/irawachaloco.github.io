@@ -9,25 +9,22 @@
                 replace: 'true',
                 templateUrl: 'src/views/directives/navbar.html',
                 scope: {
-                    navtabs: '='
                 },
                 link: function (scope, element, attrs) {
-                    var tabs = scope.navtabs;
-                    scope.homeTab = tabs[0];
-                    scope.tabs = _.filter(tabs, function (tab) {
-                        return tab.url !== '/';
-                    });
 
-                    var selectedTab = _.find(tabs, function (tab) {
-                        return tab.url === $location.path();
-                    });
-                    selectedTab.active = true;
-                    scope.selectTab = function (tab) {
-                        selectedTab.active = false;
-                        selectedTab = tab;
-                        selectedTab.active = true;
-                        $location.url(selectedTab.url);
+                    scope.isLandingPage = function () {
+                        return $location.url() === '/';
                     };
+
+                    scope.$watch('isLandingPage()', setStatus);
+
+                    function setStatus (status) {
+                        if(status) {
+                            scope.containerClass = 'landing-page';
+                        } else {
+                            scope.containerClass = 'inner-page';
+                        }
+                    }
                 }
             };
         }
