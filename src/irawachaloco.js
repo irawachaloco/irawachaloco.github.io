@@ -17,6 +17,18 @@
                     controller:'pintura', // I name the main controller on each page as 'app' as a personal preference.
                     templateUrl:'src/views/pintura.html'
                 })
+                .when('/photo', {
+                    controller:'photo', // I name the main controller on each page as 'app' as a personal preference.
+                    templateUrl:'src/views/photo.html'
+                })
+                .when('/object', {
+                    controller:'object', // I name the main controller on each page as 'app' as a personal preference.
+                    templateUrl:'src/views/object.html'
+                })
+                .when('/draw', {
+                    controller:'draw', // I name the main controller on each page as 'app' as a personal preference.
+                    templateUrl:'src/views/draw.html'
+                })
                 .otherwise({
                     redirectTo:'/'
                 });
