@@ -5,7 +5,7 @@
 (function (angular) {
     'use strict';
 
-    angular.module('wPage', ['ngRoute', 'ngAnimate']).config([
+    angular.module('wPage', ['ngRoute', 'ngAnimate', 'slick']).config([
         '$routeProvider',
         function ($routeProvider) {
             $routeProvider
