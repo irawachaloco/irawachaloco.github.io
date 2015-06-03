@@ -200,7 +200,7 @@ a:nth-child(6) .placeholder {
 .index-menu-box {
     width:26vw;
     height:23vw;
-    margin: 1vw;
+    margin: 0 1vw 1vw 0;
     float: left;
     position: relative;
     overflow: hidden;
@@ -228,6 +228,64 @@ a:nth-child(6) .placeholder {
     -moz-animation-iteration-count:     infinite;
     -o-animation-iteration-count:       infinite;
 }
+.index-menu-box:hover {
+    box-shadow: 2pt 5pt 10pt 2pt rgba(0,0,0,.2);
+}
+
+.index-menu-box .box-content {
+    width: 100%;
+    bottom: 0;
+    -webkit-transform: translate(0,100%);
+    transform: translate(0,100%);
+    background-blend-mode: color;
+}
+.index-menu-box.show-subnav .box-content {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+}
+.menu-item-title h1 {
+    color: rgba(40,40,40,.2);
+    font-size: 3em;
+    line-height: 23vw;
+}
+.index-menu-box.show-subnav .menu-item-title h1 {
+    line-height: 1em;
+}
+.box-content li {
+    font-size: 3em;
+    line-height: 2em;
+    color: rgba(255,255,255,.6);
+    background-color: rgba(0,0,0,.13);
+}
+
+.index-menu-box:hover.show-subnav .box-content {
+
+}
+.index-menu-box .box-content {
+    -webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.315, 1); /* older webkit */
+    -webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.315, 1.185);
+    -moz-transition: all 500ms cubic-bezier(0.175, 0.885, 0.315, 1.185);
+    -o-transition: all 500ms cubic-bezier(0.175, 0.885, 0.315, 1.185);
+    transition: all 500ms cubic-bezier(0.175, 0.885, 0.315, 1.185); /* bounce */
+}
+
+.menu-item-title {
+    position: absolute;
+    width: 100%;
+}
+
+.superMenu.landing-page {
+
+}
+.superMenu.inner-page .index-menu-box {
+    width: 5vw;
+    height: 5vw;
+}
+.superMenu .index-menu-box {
+
+}
+
+/* -- IMAGES -- */
 .index-menu-box:nth-of-type(1) {
     background: rgba(253,252,237,.2) center;
     background-size: cover;
@@ -254,9 +312,6 @@ a:nth-child(6) .placeholder {
 }
 
 /* - Hovers - */
-.index-menu-box:hover {
-    box-shadow: 2pt 5pt 10pt 2pt rgba(0,0,0,.2);
-}
 .index-menu-box:hover:nth-of-type(1) {
     -webkit-animation-name: showweb;
     -moz-animation-name: showweb;
@@ -450,51 +505,33 @@ a:nth-child(6) .placeholder {
     }
 }
 
-.index-menu-box .box-content {
-    /*position: absolute;*/
-    width: 100%;
-    background-color: red;
-    bottom: 0;
-    -webkit-transform: translate(0,100%);
-    transform: translate(0,100%);
-}
-.index-menu-box.show-subnav .box-content {
-    background-color: blue;
-    -webkit-transform: translate(0);
-    transform: translate(0);
-}
-.index-menu-box .box-content {
-    -webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.315, 1); /* older webkit */
-    -webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.315, 1.185);
-    -moz-transition: all 500ms cubic-bezier(0.175, 0.885, 0.315, 1.185);
-    -o-transition: all 500ms cubic-bezier(0.175, 0.885, 0.315, 1.185);
-    transition: all 500ms cubic-bezier(0.175, 0.885, 0.315, 1.185); /* custom */
-}
-.index-menu-box .box-content.ng-hide {
-    opacity:0;
-}
-.box-content li {
-    color: white;
-}
-.menu-item-title {
-    position: absolute;
-    width: 100%;
-}
-.menu-item-title h1 {
-    color: rgba(40,40,40,.2);
-    font-size: 3rem;
-    line-height: 23vw;
-}
-.superMenu.landing-page {
 
+.image div {
+    height: 64vh;
 }
-.superMenu.inner-page .index-menu-box {
-    width: 5vw;
-    height: 5vw;
+.image:nth-of-type(1) {
+    background: url("https://farm1.staticflickr.com/368/18287886786_5d05cc4c6d_b.jpg") no-repeat;
+    background-size: contain;
 }
-.superMenu .index-menu-box {
-
+.image:nth-of-type(2) {
+    background: url("https://farm8.staticflickr.com/7774/17691657004_4791746bc7_b.jpg") no-repeat;
+    background-size: contain;
 }
+.image:nth-of-type(3) {
+    background: url("https://farm1.staticflickr.com/265/17694328793_a67b9ce9bb_b.jpg") no-repeat;
+    background-size: contain;
+}
+.image:nth-of-type(4) {
+    background: url("https://farm1.staticflickr.com/268/18128839709_e0d342503e_b.jpg") no-repeat;
+    background-size: contain;
+}
+.image:nth-of-type(5) {
+    background: url("https://farm1.staticflickr.com/368/18287886786_5d05cc4c6d_b.jpg") no-repeat;
+    background-size: contain;
+}.image:nth-of-type(6) {
+     background: url("https://farm1.staticflickr.com/352/18126412660_fb1856f8ce_b.jpg") no-repeat;
+     background-size: contain;
+ }
 
 
 /* Oscar termina sus cochinadas */
