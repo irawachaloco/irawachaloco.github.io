@@ -23,7 +23,7 @@
                         scope.showContent = !scope.showContent;
                         scope.extraClass = scope.extraClass ? undefined : 'show-subnav';
                     };
-                    function navigate () {
+                    function navigate() {
                         if (scope.goTo) {
                             $location.url(scope.goTo);
                         }

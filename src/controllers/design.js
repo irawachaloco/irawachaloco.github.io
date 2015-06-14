@@ -1,7 +1,7 @@
 (function (angular) {
     'use strict';
 
-    angular.module('wPage').controller('draw', [
+    angular.module('wPage').controller('design', [
         '$scope',
         function ($scope) {
             $scope.name = 'My Name';

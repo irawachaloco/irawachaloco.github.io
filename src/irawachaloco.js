@@ -13,6 +13,14 @@
                     controller:'index', // I name the main controller on each page as 'app' as a personal preference.
                     templateUrl:'src/views/index.html'
                 })
+                .when('/web', {
+                    controller:'web', // I name the main controller on each page as 'app' as a personal preference.
+                    templateUrl:'src/views/web.html'
+                })
+                .when('/design', {
+                    controller:'design', // I name the main controller on each page as 'app' as a personal preference.
+                    templateUrl:'src/views/design.html'
+                })
                 .when('/pintura', {
                     controller:'pintura', // I name the main controller on each page as 'app' as a personal preference.
                     templateUrl:'src/views/pintura.html'
