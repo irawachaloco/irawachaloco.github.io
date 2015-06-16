@@ -183,7 +183,8 @@ li {
 /* === SLIDER SECTION === */
 .image  {
     height: 77vh !important;
-    background-repeat: no-repeat;
+    background: center no-repeat;
+    background-size: contain;
 }
 /* --SLICK STYLES -- */
 
