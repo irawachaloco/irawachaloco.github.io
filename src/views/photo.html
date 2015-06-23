@@ -1,14 +1,20 @@
 <section id="photo" class="black">
     <div class="content">
-        <slick infinite="false"  autoplay="true" autoplay-speed="6000"  class="slider-for" >
+        <slick infinite="true"  autoplay="false" autoplay-speed="6000"  slides-to-show="1" arrows="false"  class="slider slider-for" >
             
             <div ng-repeat="image in imageList" style="background-image:url({{image.url}})" class="image" >
                 <h2>{{image.title}}</h2>
 
             </div>
         </slick>
-        <!--<slick  slides-to-show="4" slides-to-scroll="1" as-nav-for=".slider-for" class="slider-nav" focus-on-select=true center-mode=true>-->
-        <!--</slick>-->
     </div>
-
+</section>
+<section>
+    <div>muñecos</div>
+    <slick infinite="false" arrows="false" slides-to-show="5" slides-to-scroll="5" as-nav-for=".slider-for" class="slider slider-nav" focus-on-select="true" center-mode="true"  variable-width="true">
+        <div ng-repeat="image in imageList" class="image"  >
+            <div class="show-this-btn"><img ng-src={{image.url}}/></div>
+            <div class="show-this-btn"></div>
+        </div>
+    </slick>
 </section>

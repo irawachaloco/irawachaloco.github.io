@@ -47,11 +47,11 @@ li {
     fill:url(#mainBkgdGrad);
     height:100%;
     display:inline-block;
-    position:absolute;
+    position:fixed;
     box-sizing: border-box;
     padding:0;
     margin:0;
-    z-index: 0;
+    z-index: -1;
 }
 .main-bkgd2 > * {
     z-index: 0;
@@ -176,21 +176,89 @@ li {
 }
 
 
+.galery {
+    /*padding-bottom: 5vh;*/
+    -webkit-column-count: 6;
+    -moz-column-count: 6;
+    column-count: 6;
+}
 
+.galery img {
+    width: 22vh;
+    background-size: cover;
+    /*float: left;*/
+}
+.show-this-btn {
+    /*height: 100%;*/
+    /*width: 100%;*/
+}
+.slider-for {
 
-
-
+}
+ .slick-slider .slick-list {
+    padding: 0 !important;
+}
+.slider-nav .slick-slider .slick-track {
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -o-transform: none !important;
+    transform: none !important;
+}
+/*.slick-slider{ margin: 2vh auto 7vh;}*/
+.slider-nav {
+    max-height: 58vh;
+    overflow-y: scroll;
+}
+.slider-nav .slick-track {
+    width: auto !important;
+    -webkit-transform:none !important;
+    -moz-transform:none !important;
+    transform:none !important;
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+}
+.slider-nav img {
+    /*max-width: 12vw;*/
+    width: 100%;
+    padding-bottom: .5em;
+}
 /* === SLIDER SECTION === */
-.image  {
-    height: 77vh !important;
+
+.slick-slide.image,
+.galery .image {
     background: center no-repeat;
     background-size: contain;
 }
+.slider-for .slick-slide.image h2 {
+
+}
+.slider-nav .slick-slide.image {
+
+    height: auto !important;
+
+}
+.galery .image {
+    height: 25vh;
+    width: 21.5vh;
+    background-size: cover;
+    float: left;
+}
+.galery .image h2 {
+    display: none;
+}
+.content {
+    max-width: 50vw;
+    float: right;
+    margin-left: 2em;
+}
 /* --SLICK STYLES -- */
-
-/*.slick-dots { display: none !important;}*/
-
-.slick-slider{ margin: 2vh auto 7vh;}
+.slick-slide.image {
+    height: 60vh !important;
+}
+.slider-nav .slick-slide.image {
+}
 .slick-prev:before {
     -webkit-transform: rotate(180deg) translate(2vw,0);
     -moz-transform:    rotate(180deg) translate(2vw,0);
