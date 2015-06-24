@@ -22,7 +22,8 @@
             <linearGradient id="mainBkgdGrad" x1="0%" y1="0%" x2="100%" y2="0%" fy="0" gradientTransform="rotate(-60 .5 .5)" >
                 <stop offset="0%" style="stop-color:blue; stop-opacity:.35">
                 </stop>
-                <stop offset="0%" style="stop-color:red; stop-opacity:.2">
+                <stop offset="30%" style="stop-color:red; stop-opacity:.2">
+                    <!--<animate attributeName="offset" dur="120s" values="0;1;0" repeatCount="indefinite" />-->
                 </stop>
                 <stop offset="100%" style="stop-color:moccasin; stop-opacity:.3">
                 </stop>
@@ -88,14 +89,15 @@
     <script src="src/bower_components/slick-carousel/slick/slick.js"></script>
     <script src="src/bower_components/angular-slick/dist/slick.js"></script>
     <script src="src/irawachaloco.js"></script>
-    <script src="src/directives/index_menu_box.js"></script>
     <script src="src/directives/navbar.js"></script>
     <script src="src/controllers/web.js"></script>
+    <script src="src/controllers/ux.js"></script>
     <script src="src/controllers/design.js"></script>
     <script src="src/controllers/pintura.js"></script>
     <script src="src/controllers/object.js"></script>
     <script src="src/controllers/photo.js"></script>
     <script src="src/controllers/draw.js"></script>
+    <script src="src/directives/index_menu_box.js"></script>
     <script src="src/controllers/index.js"></script>
 </body>
 </html>

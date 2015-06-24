@@ -1,27 +1,21 @@
-<section id="paint" class="black">
+<section id="photo" class="black">
     <div class="content">
-        <h2>la muñeca rota</h2>
-        <!-- <p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought</p> -->
-        <!--<div class="paint slider autoplay">-->
-        <!--<div><div class="image">-->
-        <!--<div class=''>hola desaparezco?</div>-->
-        <!--</div></div>-->
-        <!--</div>-->
-        <slick autoplay=true autoplay-speed=6000 >
-            <div class="image"></div>
-            <div class="image"></div>
-            <div class="image"></div>
-            <div class="image"></div>
-            <div class="image"></div>
-            <div class="image"></div>
+        <slick infinite="true"  autoplay="false" autoplay-speed="6000"  slides-to-show="1" arrows="false"  class="slider slider-for" >
 
-            <!--<div><div class="image"><img src="https://farm1.staticflickr.com/368/18287886786_5d05cc4c6d_b.jpg"/></div></div>-->
-            <!--<div><div class="image"><img data-lazy="https://farm8.staticflickr.com/7774/17691657004_4791746bc7_b.jpg"/></div></div>-->
-            <!--<div><div class="image"><img data-lazy="https://farm1.staticflickr.com/265/17694328793_a67b9ce9bb_b.jpg"/></div></div>-->
-            <!--<div><div class="image"><img data-lazy="https://farm1.staticflickr.com/268/18128839709_e0d342503e_b.jpg"/></div></div>-->
-            <!--<div><div class="image"><img data-lazy="https://farm1.staticflickr.com/368/18287886786_5d05cc4c6d_b.jpg"/></div></div>-->
-            <!--<div><div class="image"><img data-lazy="https://farm1.staticflickr.com/352/18126412660_fb1856f8ce_b.jpg"/></div></div>-->
+            <div ng-repeat="image in imageList">
+
+                <div style="background-image:url({{image.url}})" class="image" ></div>
+                <h2>{{image.title}}</h2>
+            </div>
         </slick>
     </div>
-
+</section>
+<section>
+    <h2>muñecos</h2>
+    <slick infinite="false" arrows="false" slides-to-show="5" slides-to-scroll="5" as-nav-for=".slider-for" class="slider slider-nav" focus-on-select="true" center-mode="true"  variable-width="true">
+        <div ng-repeat="image in imageList" class="image"  >
+            <div class="show-this-btn"><img ng-src={{image.url}}/></div>
+            <div class="show-this-btn"></div>
+        </div>
+    </slick>
 </section>

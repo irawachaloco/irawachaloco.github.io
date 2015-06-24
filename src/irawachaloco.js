@@ -17,6 +17,10 @@
                     controller:'web', // I name the main controller on each page as 'app' as a personal preference.
                     templateUrl:'src/views/web.html'
                 })
+                .when('/ux', {
+                    controller:'ux', // I name the main controller on each page as 'app' as a personal preference.
+                    templateUrl:'src/views/ux.html'
+                })
                 .when('/design', {
                     controller:'design', // I name the main controller on each page as 'app' as a personal preference.
                     templateUrl:'src/views/design.html'
