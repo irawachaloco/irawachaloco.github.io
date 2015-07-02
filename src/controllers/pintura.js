@@ -6,148 +6,60 @@
         function ($scope) {
             $scope.imageList = [
                 {
-                    title:'pareja',
-                    url:'https://farm8.staticflickr.com/7791/18287991486_e7680a93e7_b.jpg'
+                    title:'cajas',
+                    url:'https://farm8.staticflickr.com/7782/18316413461_2df8dcd565_b.jpg'
                 },
                 {
-                    title:'piesbailan',
-                    url:'https://farm8.staticflickr.com/7735/18315501481_ffdbc6ffdc_b.jpg'
+                    title:'escalera',
+                    url:'https://farm9.staticflickr.com/8802/18127235500_0929ab0a3d_b.jpg'
                 },
                 {
-                    title:'dedos',
-                    url:'https://farm9.staticflickr.com/8864/18313874885_c59474d60e_b.jpg'
+                    title:'silla',
+                    url:'https://farm1.staticflickr.com/265/17694328793_a67b9ce9bb_b.jpg'
                 },
                 {
-                    title:'mano',
-                    url:'https://farm8.staticflickr.com/7758/17691287084_a8b326779c_b.jpg'
+                    title:'cajas',
+                    url:'https://farm9.staticflickr.com/8807/17694308213_c6c0ebb518_b.jpg'
                 },
                 {
-                    title:'pareja',
-                    url:'https://farm1.staticflickr.com/491/18128233809_70b19f89d8_b.jpg'
+                    title:'silla',
+                    url:'https://farm8.staticflickr.com/7777/18128715229_58818536ae_b.jpg'
                 },
                 {
-                    title:'pie',
-                    url:'https://farm1.staticflickr.com/489/17693267143_a666d016d0_b.jpg'
+                    title:'sillon',
+                    url:'https://farm1.staticflickr.com/268/18128839709_e0d342503e_b.jpg'
                 },
                 {
-                    title:'nikita',
-                    url:'https://farm8.staticflickr.com/7730/18310186752_2cb8185903_b.jpg'
+                    title:'mesa',
+                    url:'https://farm9.staticflickr.com/8808/18316435161_009289d6e5_b.jpg'
                 },
                 {
-                    title:'ojo cemento',
-                    url:'https://farm8.staticflickr.com/7736/18126143110_da4d15cb3d_b.jpg'
+                    title:'cajas',
+                    url:'https://farm1.staticflickr.com/383/18127082698_d2b01f2f01_b.jpg'
                 },
                 {
-                    title:'parte',
-                    url:'https://farm8.staticflickr.com/7739/18309972252_bbc1ef6733_b.jpg'
+                    title:'muñequita',
+                    url:'https://farm1.staticflickr.com/368/18287886786_5d05cc4c6d_b.jpg'
                 },
                 {
-                    title:'piernas',
-                    url:'https://farm1.staticflickr.com/539/18310507542_14bca46317_b.jpg'
+                    title:'ángel mosca',
+                    url:'https://farm1.staticflickr.com/436/17693671193_a914b574f5_b.jpg'
                 },
                 {
-                    title:'calzón',
-                    url:'https://farm9.staticflickr.com/8798/18287460296_5c26e2d72c_b.jpg'
+                    title:'pies',
+                    url:'https://farm9.staticflickr.com/8784/18314256155_cf137072d2_b.jpg'
                 },
                 {
-                    title:'pilin',
-                    url:'https://farm1.staticflickr.com/313/18309979212_2d20c2e8f1_b.jpg'
+                    title:'niño-muñeco',
+                    url:'https://farm8.staticflickr.com/7774/17691657004_4791746bc7_b.jpg'
                 },
                 {
-                    title:'labios',
-                    url:'https://farm9.staticflickr.com/8864/18287467546_772f83a10f_b.jpg'
+                    title:'sin título',
+                    url:'https://farm1.staticflickr.com/540/18287822076_78c1871da2_b.jpg'
                 },
                 {
-                    title:'sentado',
-                    url:'https://farm8.staticflickr.com/7730/18310528802_b0c5f6ed1a_b.jpg'
-                },
-                {
-                    title:'ruso',
-                    url:'https://farm9.staticflickr.com/8834/18315860151_185c5f24f4_b.jpg'
-                },
-                {
-                    title:'oreja',
-                    url:'https://farm9.staticflickr.com/8839/18127674389_1a1e743f11_b.jpg'
-                },
-                {
-                    title:'ombligo',
-                    url:'https://farm9.staticflickr.com/8811/18287472016_f1335d495e_b.jpg'
-                },
-                {
-                    title:'pompas',
-                    url:'https://farm9.staticflickr.com/8769/18313856145_f8748cf88e_b.jpg'
-                },
-                {
-                    title:'heladia',
-                    url:'https://farm8.staticflickr.com/7735/18127705299_814450fa50_b.jpg'
-                },
-                {
-                    title:'ojo',
-                    url:'https://farm8.staticflickr.com/7770/18315312881_08677e5eb1_b.jpg'
-                },
-                {
-                    title:'bebezumbi',
-                    url:'https://farm8.staticflickr.com/7740/17691818404_c0d7b3afb0_b.jpg'
-                },
-                {
-                    title:'muñeca rota',
-                    url:'https://farm9.staticflickr.com/8782/18126027878_d479a14515_b.jpg'
-                },
-                {
-                    title:'muñeca rota',
-                    url:'https://farm1.staticflickr.com/437/18287416486_0412915d1f_b.jpg'
-                },
-                {
-                    title:'muñeca rota',
-                    url:'https://farm8.staticflickr.com/7745/18315279821_9c72a79b4e_b.jpg'
-                },
-                {
-                    title:'muñeca rota',
-                    url:'https://farm9.staticflickr.com/8893/17693212153_5e6acac288_b.jpg'
-                },
-                {
-                    title:'muñeca tirada',
-                    url:'https://farm9.staticflickr.com/8879/17693189513_94a0f482cc_b.jpg'
-                },
-                {
-                    title:'ojo azul',
-                    url:'https://farm1.staticflickr.com/522/18315322201_82c961240f_b.jpg'
-                },
-                {
-                    title:'pompas güero',
-                    url:'https://farm8.staticflickr.com/7749/17693298933_83228ce477_b.jpg'
-                },
-                {
-                    title:'barbie',
-                    url:'https://farm9.staticflickr.com/8795/17693837323_497b7090a7_b.jpg'
-                },
-                {
-                    title:'barbie',
-                    url:'https://farm1.staticflickr.com/316/18310140772_100e639ee6_b.jpg'
-                },
-                {
-                    title:'barbie',
-                    url:'https://farm1.staticflickr.com/475/18126279468_940ac39017_b.jpg'
-                },
-                {
-                    title:'ken',
-                    url:'https://farm8.staticflickr.com/7777/18310543932_5abbac8e0a_b.jpg'
-                },
-                {
-                    title:'ken',
-                    url:'https://farm9.staticflickr.com/8776/18310536832_1d67f4b191_b.jpg'
-                },
-                {
-                    title:'muñeca rota tirada',
-                    url:'https://farm8.staticflickr.com/7767/18309910862_e8eb568056_b.jpg'
-                },
-                {
-                    title:'untitulo12',
-                    url:'https://farm9.staticflickr.com/8857/17693768183_4e9f6f227f_b.jpg'
-                },
-                {
-                    title:'ángel moreno',
-                    url:'https://farm9.staticflickr.com/8864/18127667429_c65362e5d2_b.jpg'
+                    title:'sin título',
+                    url:'https://farm1.staticflickr.com/520/18310291562_50475cb32f_b.jpg'
                 }
             ];
         }
