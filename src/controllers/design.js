@@ -6,20 +6,20 @@
         function ($scope) {
             $scope.imageList = [
                 {
-                    title:'pareja',
-                    url:'https://farm8.staticflickr.com/7791/18287991486_e7680a93e7_b.jpg'
+                    title:'markers',
+                    url:'https://farm1.staticflickr.com/482/18315079425_16596e36bd_b.jpg'
                 },
                 {
-                    title:'piesbailan',
-                    url:'https://farm8.staticflickr.com/7735/18315501481_ffdbc6ffdc_b.jpg'
+                    title:'marker',
+                    url:'https://farm1.staticflickr.com/550/18311164352_3b67ed12ce_o.png'
                 },
                 {
-                    title:'dedos',
-                    url:'https://farm9.staticflickr.com/8864/18313874885_c59474d60e_b.jpg'
+                    title:'icon',
+                    url:'https://farm9.staticflickr.com/8806/18127262808_5f59dc190b_z.jpg'
                 },
                 {
-                    title:'mano',
-                    url:'https://farm8.staticflickr.com/7758/17691287084_a8b326779c_b.jpg'
+                    title:'icon',
+                    url:'https://farm9.staticflickr.com/8881/18127238818_09cc47f702_z.jpg'
                 },
                 {
                     title:'pareja',
